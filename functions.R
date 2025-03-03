@@ -15,7 +15,7 @@ generateContent <- function(prompt, api_key) {
 
   # Make the API request
   res <- httr::POST(
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent",
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
     httr::add_headers(.headers = headers),
     query = params,
     body = data
@@ -74,7 +74,7 @@ generate_content_vision <- function(prompt, image_source, api_key) {
   data <- upload_file("request.json")
 
   # Make the API request for vision
-  res <- httr::POST(url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro-vision:generateContent", httr::add_headers(.headers = headers), query = params, body = data)
+  res <- httr::POST(url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent", httr::add_headers(.headers = headers), query = params, body = data)
 
   # Extract and return the generated text with vision
   return(content(res)$candidates[[1]]$content$parts[[1]]$text)

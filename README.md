@@ -14,11 +14,9 @@ Welcome to ShinyGeminiPro, an interactive Shiny app that allows you to explore t
 * Google GeminiPro Text Model Results
 ![](textexample.JPG)
 
-* Google GeminiPro Vision Model - 1
+* Google GeminiPro Vision Model
 ![](visionexample.JPG)
 
-* Google GeminiPro Vision Model - 2
-![](visionexample2.JPG)
 
 # Try it on shinyapps.io 🚀
 [shinygeminipro / shinyapps.io](https://tolgakurtuluss.shinyapps.io/shinygeminipro/)

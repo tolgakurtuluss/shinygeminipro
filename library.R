@@ -1,4 +1,5 @@
 # Install required packages
+options(repos = c(CRAN = "https://cran.rstudio.com/"))
 install.packages(c("shiny", "httr", "jsonlite", "base64enc", "jpeg", "imager", "stringi", "DT", "shinycssloaders"))
 
 # Load required libraries
